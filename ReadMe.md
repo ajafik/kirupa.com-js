@@ -4,4 +4,6 @@
 
 > Lesson 2 - Variables
 
-> Lesson 1 - Functions
+> Lesson 3 - Functions
+
+> Lesson 4 - Conditional Statements

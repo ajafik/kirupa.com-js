@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="stuff, to, help, search, engines, not" name="keywords">
+    <meta content="What this page is about." name="description">
+    <meta content="An Interesting Title Goes Here" name="title">
+    <title>An Interesting Title Goes Here</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        /*===================================
+            CONTIONAL STATEMENTS
+        =====================================*/
+
+        var safeToProceed = true;
+
+        if (safeToProceed) {
+            alert("You shall pass!");
+        } else {
+            alert("You shall not pass!");
+        }
+
+        //----------------------------------------------
+        var speedLimit = 55;
+
+        function amISpeeding(speed) {
+            if (speed >= speedLimit) {
+                alert("Yes. You are speeding.");
+            } else {
+                alert("No. You are not speeding. What's wrong with you?");
+            }
+        }
+
+        amISpeeding(53);
+        amISpeeding(72);
+
+        //----------------------------------------------
+        var xPos = 300;
+        var yPos = 150;
+
+        function sendWarning(x, y) {
+            if ((x < xPos) && (y < yPos)) {
+                alert("Adjust the position");
+            } else {
+                alert("Things are fine!");
+            }
+        }
+
+        sendWarning(500, 160);
+        sendWarning(100, 100);
+        sendWarning(201, 149);
+
+        //---------------------------------------------
+        var color = "green";
+
+        switch (color) {
+            case "yellow":
+                alert("yellow color");
+                break;
+            case "red":
+                alert("red color");
+                break;
+            case "blue":
+                alert("blue color");
+                break;
+            case "green":
+                alert("green color");
+                break;
+            case "black":
+                alert("black color");
+                break;
+            default:
+                alert("no known color specified");
+                break;
+        }
+
+        //------------------------------------------
+        var number = 20;
+        switch (number > 10) {
+            case true:
+                alert("yes");
+                break;
+            case false:
+                alert("nope");
+                break;
+        }
+
+
+    </script>
+</body>
+
+</html>
