@@ -9,3 +9,5 @@
 > Lesson 4 - Conditional Statements
 
 > Lesson 5 - Loops
+
+> Lesson 6 - Timers
