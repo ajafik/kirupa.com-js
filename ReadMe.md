@@ -13,3 +13,5 @@
 > Lesson 6 - Timers
 
 > Lesson 7 - Variable Scope
+
+> Lesson 8 - Hoisting

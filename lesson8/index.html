@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="stuff, to, help, search, engines, not" name="keywords">
+    <meta content="What this page is about." name="description">
+    <meta content="An Interesting Title Goes Here" name="title">
+    <title>An Interesting Title Goes Here</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <script>
+        /*===================================
+            HOISTING
+        =====================================*/
+        //Variable Hoisting 
+        console.log(bar); //UNDEFINED
+        var bar = 100;
+        /*-----------------
+        The code above transaltes to below cause the compiler brings to the top the declaration of variable known as HOISTING thus UNDEFINED
+        var bar;
+        console.log(bar);
+        bar = 100;
+        */
+
+        //Function Hoisting 
+        console.log(foo()); //Outputs Yay
+
+        function foo() {
+            return "Yay!";
+        }
+
+        /*For function Hoisting, the whole function is hoisted
+        So we have it as 
+        function foo() {
+            return "Yay!";
+        }
+        console.log(foo());
+         */
+
+        //Function Hoisting for Function Expression
+        console.log(foo());
+
+        var foo = function () {
+            return "Yay!";
+        }
+        // Output: TypeError: foo is not a function. Cause the variable of the function is hoisted.
+
+
+        //----The Temporary Dead Zone with LET, CONST, CLASS
+        console.log(answer) // ReferenceError
+        let answer = "Correct";
+
+        console.log(ROLE) // ReferenceError
+        const ROLE = "user";
+
+        var foo = new AwesomeSauce(); // ReferenceError
+
+        class AwesomeSauce {
+            constructor() {
+                console.log("I exist!");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
