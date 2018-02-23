@@ -7,3 +7,5 @@
 > Lesson 3 - Functions
 
 > Lesson 4 - Conditional Statements
+
+> Lesson 5 - Loops

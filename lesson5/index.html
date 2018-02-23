@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="stuff, to, help, search, engines, not" name="keywords">
+    <meta content="What this page is about." name="description">
+    <meta content="An Interesting Title Goes Here" name="title">
+    <title>An Interesting Title Goes Here</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        /*===================================
+            LOOPS
+        =====================================*/
+
+        var count = 10;
+
+        for (var i = 0; i < count; i++) {
+            saySomething();
+        }
+
+        function saySomething() {
+            document.writeln("hello!");
+        }
+
+        //Breaking  loop
+        for (var i = 0; i < 100; i++) {
+            document.writeln(i);
+
+            if (i == 45) {
+                break;
+            }
+        }
+
+        //Skipping an Iteration
+        var floors = 28;
+
+        for (var i = 1; i <= floors; i++) {
+            if (i == 13) {
+                // no floor here
+                continue;
+            }
+
+            document.writeln("At floor: " + i + "<br>");
+        }
+
+        //Looping backwards
+        for (var i = 25; i > 0; i--) {
+            document.writeln("hello");
+        }
+
+        //Looping with String conditions
+        for (var i = "a"; i != "aaaaaaaa"; i += "a") {
+            document.writeln("hmm...");
+        }
+
+        //Looping through an array with For Loops
+        var myArray = ["one", "two", "three"];
+
+        for (var i = 0; i < myArray.length; i++) {
+            document.writeln(myArray[i]);
+        }
+
+        //While Loop
+        var count = 0;
+
+        while (count < 10) {
+            document.writeln("looping away!");
+
+            count++;
+        }
+
+        //Do While loop
+        var count = 0;
+
+        do {
+            count++;
+
+            document.writeln("I don't know what I am doing here! <br>");
+        } while (count < 10);
+
+        
+
+    </script>
+</body>
+
+</html>
