@@ -11,3 +11,5 @@
 > Lesson 5 - Loops
 
 > Lesson 6 - Timers
+
+> Lesson 7 - Variable Scope

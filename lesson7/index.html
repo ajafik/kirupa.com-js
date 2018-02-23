@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="stuff, to, help, search, engines, not" name="keywords">
+    <meta content="What this page is about." name="description">
+    <meta content="An Interesting Title Goes Here" name="title">
+    <title>An Interesting Title Goes Here</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <script>
+        /*===================================
+            Variable Scope
+        =====================================*/
+        //Global variable 
+        var counter = 0;
+        function getCount() {
+            return counter;
+        }
+
+        //Global Variable
+        function setState_G() {
+            state = "on"; //This is withiut var so it is global
+        }
+        setState_G();
+
+        alert(state) // "on"
+
+
+        //Local Variable
+        function setState() {
+            var state_check = "on";
+        }
+        setState();
+
+        alert(state_check); // Error: Not defined
+
+        //No Block Scoping
+        function checkWeight(weight) {
+            if (weight > 5000) {
+                var text = "No free shipping for you!";
+                alert(text);
+            }
+            alert(text); // how did it know??!
+        }
+
+        checkWeight(6000);
+
+        //Block Scope with LET keyword.
+        var x = 100;
+
+        function theFutureIsNow() {
+            if (true) {
+                let x = 350;
+                alert(x) // 350
+            }
+            alert(x) // 100;
+        }
+        theFutureIsNow();
+
+    </script>
+</body>
+
+</html>
