@@ -15,3 +15,5 @@
 > Lesson 7 - Variable Scope
 
 > Lesson 8 - Hoisting
+
+> Lesson 9 - Closures

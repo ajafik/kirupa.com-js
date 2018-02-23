@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="stuff, to, help, search, engines, not" name="keywords">
+    <meta content="What this page is about." name="description">
+    <meta content="An Interesting Title Goes Here" name="title">
+    <title>An Interesting Title Goes Here</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <script>
+        /*===================================
+            Closures
+        =====================================*/
+        function calculateRectangleArea(length, width) {
+            return length * width;
+        }
+
+        var roomArea = calculateRectangleArea(10, 10);
+        alert(roomArea);
+
+        //---------------
+        function youSayGoodBye() {
+
+            alert("Good Bye!");
+
+            function andISayHello() {
+                alert("Hello!");
+            }
+
+            return andISayHello;
+        }
+
+
+        //------------
+        function stopWatch() {
+            var startTime = Date.now();
+
+            function getDelay() {
+                var elapsedTime = Date.now() - startTime;
+                alert(elapsedTime);
+            }
+
+            return getDelay;
+        }
+
+    </script>
+</body>
+
+</html>
