@@ -17,3 +17,5 @@
 > Lesson 8 - Hoisting
 
 > Lesson 9 - Closures
+
+> Lesson 10 - IIFE
